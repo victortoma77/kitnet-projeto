@@ -1,4 +1,5 @@
-import React from 'react';
+import type { ReactNode } from 'react';
+
 
 import { HomepageCard } from '@/components/home-page-card';
 // import { AppProps } from 'next/app';
