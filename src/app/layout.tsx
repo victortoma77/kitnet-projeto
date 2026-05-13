@@ -5,7 +5,8 @@ import { ThemeProvider } from 'next-themes';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { siteConfig } from './siteConfig';
-import React, { ReactNode } from 'react';
+import type { ReactNode } from 'react';
+
 
 const inter = Inter({
   subsets: ['latin'],
