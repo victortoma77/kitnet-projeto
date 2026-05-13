@@ -1,0 +1,27 @@
+name: Dependabot Auto-Merge
+
+on: pull_request
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    # Executa apenas se o Pull Request foi aberto pelo Dependabot
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: Coletar metadados do Dependabot
+        id: metadata
+        uses: dependabot/fetch-metadata@v2
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Aprovar e mesclar PR automaticamente
+        # Altere "minor" para "patch" se quiser ser ainda mais conservador nas atualizações
+        if: steps.metadata.outputs.update-type != 'version-update:semver-major'
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
