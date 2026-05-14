@@ -55,6 +55,18 @@ const MyApp = () => {
               target: '_blank',
             },
             {
+              name: 'Supermercado Violeta',
+              imagem: `/images/regiao/supermercado-violeta.jpg`,
+              url: 'https://goo.gl/maps/hXMr9jusiJFgcYZYA',
+              target: '_blank',
+            },
+            {
+              name: 'Ultrafarma Vila Indiana',
+              imagem: `/images/regiao/ultrafarma.jpg`,
+              url: 'https://goo.gl/maps/SHTXQXd2sbNgo2Ki6',
+              target: '_blank',
+            },
+            {
               name: 'Restaurante Gosto Sim',
               imagem: `/images/regiao/gosto-sim.png`,
               url: 'https://goo.gl/maps/JvB15cUMh9EGGa267',
@@ -88,18 +100,6 @@ const MyApp = () => {
               name: 'Padaria Cidade Universitária',
               imagem: `/images/regiao/padaria-cidade-universitaria.jpg`,
               url: 'https://goo.gl/maps/AgEwFGAb9y8n5K8z6',
-              target: '_blank',
-            },
-            {
-              name: 'Ultrafarma Vila Indiana',
-              imagem: `/images/regiao/ultrafarma.jpg`,
-              url: 'https://goo.gl/maps/SHTXQXd2sbNgo2Ki6',
-              target: '_blank',
-            },
-            {
-              name: 'Supermercado Violeta',
-              imagem: `/images/regiao/supermercado-violeta.jpg`,
-              url: 'https://goo.gl/maps/hXMr9jusiJFgcYZYA',
               target: '_blank',
             },
             {
