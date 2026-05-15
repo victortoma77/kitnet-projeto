@@ -22,25 +22,62 @@ export default function KitnetNavigationButton({}: NavigationButtonsProps) {
   const kitKeys = Object.keys(allKits);
   const currentIndex = kitKeys.indexOf(kitKey);
 
-  if (currentIndex === -1) return null; // Ensure the key exists
+  if (currentIndex === -1) return null;
 
-  const prevKitName = kitKeys[currentIndex - 1] || kitKeys[kitKeys.length - 1]; // Loop back if at start
-  const nextKitName = kitKeys[currentIndex + 1] || kitKeys[0]; // Loop back if at end
+  const prevKitName = currentIndex > 0 ? kitKeys[currentIndex - 1] : null;
+  const nextKitName = currentIndex < kitKeys.length - 1 ? kitKeys[currentIndex + 1] : null;
 
   return (
     <div className="mt-32 px-4 lg:px-24 w-full grid grid-cols-2">
-      <Link
-        href={`/kitnets/${prevKitName}`}
-        className="text-blue-600 underline hover:text-blue-800 gap-2 flex items-center"
-      >
-        <RiArrowLeftLine size={16} /> {allKits[prevKitName].name}
-      </Link>
-      <Link
-        href={`/kitnets/${nextKitName}`}
-        className="place-self-end text-blue-600 underline hover:text-blue-800 gap-2 flex items-center"
-      >
-        {allKits[nextKitName].name} <RiArrowRightLine size={16} />
-      </Link>
+      <div>
+        {prevKitName && (
+          <Link
+            href={`/kitnets/${prevKitName}`}
+            className="
+              group inline-flex flex-col gap-1
+              text-slate-400 hover:text-slate-900
+              dark:text-slate-500 dark:hover:text-slate-100
+              transition-colors duration-200
+            "
+          >
+            <span className="text-xs uppercase tracking-widest font-medium opacity-60 group-hover:opacity-100 transition-opacity">
+              Anterior
+            </span>
+            <span className="flex items-center gap-2 text-sm font-semibold">
+              <RiArrowLeftLine
+                size={14}
+                className="transition-transform duration-200 group-hover:-translate-x-1"
+              />
+              {allKits[prevKitName].name}
+            </span>
+          </Link>
+        )}
+      </div>
+
+      <div className="place-self-end">
+        {nextKitName && (
+          <Link
+            href={`/kitnets/${nextKitName}`}
+            className="
+              group inline-flex flex-col items-end gap-1
+              text-slate-400 hover:text-slate-900
+              dark:text-slate-500 dark:hover:text-slate-100
+              transition-colors duration-200
+            "
+          >
+            <span className="text-xs uppercase tracking-widest font-medium opacity-60 group-hover:opacity-100 transition-opacity">
+              Próximo
+            </span>
+            <span className="flex items-center gap-2 text-sm font-semibold">
+              {allKits[nextKitName].name}
+              <RiArrowRightLine
+                size={14}
+                className="transition-transform duration-200 group-hover:translate-x-1"
+              />
+            </span>
+          </Link>
+        )}
+      </div>
     </div>
   );
 }
