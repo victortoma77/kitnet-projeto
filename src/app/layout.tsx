@@ -24,6 +24,10 @@ export const metadata: Metadata = {
       name: 'Iago Soriano',
       url: '',
     },
+    {
+      name: 'Victor Kenzo Toma',
+      url: '',
+    },
   ],
   creator: 'Iago Soriano',
   // openGraph: {
