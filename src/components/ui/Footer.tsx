@@ -79,7 +79,6 @@ export default function Footer() {
         </div>
         <div className="mt-12 w-[90%] flex flex-col items-center justify-between gap-2 border-t border-gray-200 pt-8 sm:mt-16 sm:flex-row lg:mt-24 dark:border-gray-800">
           <p className="text-sm leading-5 text-gray-500 dark:text-gray-400">
-            &copy; 2025 Desenvolvido por Iati Tech Software
           </p>
         </div>
       </div>
