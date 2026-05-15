@@ -1,7 +1,7 @@
 
 
 
-import { HomepageCard } from '@/components/home-page-card';
+import { HomepageCard } from '@/components/HomepageCard';
 // import { AppProps } from 'next/app';
 // import { FC } from 'react';
 
@@ -19,26 +19,36 @@ const MyApp = () => {
         <hr className="w-full" />
         <HomepageCard
           items={[
+            // {
+            //   name: 'Kitnet Abadia dos Dourados 1',
+            //   imagem: `/images/imagens-kitnets/abadia-dos-dourados-1/main.jpg`,
+            //   url: `/kitnets/abadia-dos-dourados-1`,
+            // },
+            // {
+            //   name: 'Kitnet Abadia dos Dourados 2',
+            //   imagem: `/images/imagens-kitnets/abadia-dos-dourados-2/main.jpg`,
+            //   url: `/kitnets/abadia-dos-dourados-2`,
+            // },
+            // {
+            //   name: 'Kitnet 40A - Rua Abadia dos Dourados',
+            //   imagem: `/images/imagens-kitnets/kit-40A/main.jpg`,
+            //   url: `/kitnets/kit-40A`,
+            // },
+            // {
+            //   name: 'Loft 03 - Rua Corinto',
+            //   imagem: `/images/imagens-kitnets/loft-03-corinto/main.jpg`,
+            //   url: `/kitnets/loft-03-corinto`,
+            // },
             {
-              name: 'Kitnet Abadia dos Dourados 1',
-              imagem: `/images/imagens-kitnets/abadia-dos-dourados-1/main.jpg`,
-              url: `/kitnets/abadia-dos-dourados-1`,
+              name: 'Kit 31A - Rua Abadia dos Dourados',
+              imagem: `/images/imagens-kitnets/kit-31A/main.jpeg`,
+              url: `/kitnets/kit-31A`
             },
             {
-              name: 'Kitnet Abadia dos Dourados 2',
-              imagem: `/images/imagens-kitnets/abadia-dos-dourados-2/main.jpg`,
-              url: `/kitnets/abadia-dos-dourados-2`,
-            },
-            {
-              name: 'Kitnet Abadia dos Dourados 3',
-              imagem: `/images/imagens-kitnets/abadia-dos-dourados-3/main.jpg`,
-              url: `/kitnets/abadia-dos-dourados-3`,
-            },
-            {
-              name: 'Loft Rua Corinto',
-              imagem: `/images/imagens-kitnets/loft-rua-corinto/main.jpg`,
-              url: `/kitnets/loft-rua-corinto`,
-            },
+              name: 'Loft 05 - Rua Corinto',
+              imagem: `/images/imagens-kitnets/loft-05-corinto/main.jpeg`,
+              url: `/kitnets/loft-05-corinto`
+            }
           ]}
         />
       </div>
