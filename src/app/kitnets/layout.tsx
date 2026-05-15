@@ -1,4 +1,4 @@
-import KitnetNavigationButton from '@/components/kitnet-navigation-button';
+import KitnetNavigationButton from '@/components/KitnetNavigationButton';
 import { KitnetCarousel } from '@/components/kitnets-carousel';
 import { getImagesFromFolder } from '@/lib/getImagesFromFolder';
 

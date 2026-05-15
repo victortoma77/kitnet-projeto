@@ -65,7 +65,7 @@ export function Navigation() {
           <Button
             onClick={() =>
               window.open(
-                'https://api.whatsapp.com/send?phone=5511944531303&text=Olá!%20Tenho%20interesse%20nas%20kitnets.',
+                'https://api.whatsapp.com/send?phone=5511944531303&text=Olá!%20Encontrei%20o%20anúncio%20no%20KitUsp%20e%20tenho%20interesse%20nas%20kitnets.',
                 '_blank',
               )
             }
@@ -77,7 +77,7 @@ export function Navigation() {
             <Button
               onClick={() =>
                 window.open(
-                  'https://api.whatsapp.com/send?phone=5511944531303&text=Olá!%20Tenho%20interesse%20nas%20kitnets.',
+                  'https://api.whatsapp.com/send?phone=5511944531303&text=Olá!%20Encontrei%20o%20anúncio%20no%20KitUsp%20e%20tenho%20interesse%20nas%20kitnets.',
                   '_blank',
                 )
               }
