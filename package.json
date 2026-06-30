@@ -37,7 +37,7 @@
     "react-responsive": "^10.0.1",
     "react-wrap-balancer": "^1.1.1",
     "styled-components": "^6.4.3",
-    "swiper": "^12.2.0",
+    "swiper": "^14.0.1",
     "tailwind-merge": "^3.6.0",
     "tailwind-variants": "^3.2.2"
   },
