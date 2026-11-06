@@ -52,7 +52,7 @@
     "eslint-config-prettier": "^10.0.1",
     "prettier": "^3.9.10",
     "shiki": "^4.6.0",
-    "tailwindcss": "^4.3.2",
+    "tailwindcss": "^4.3.4",
     "typescript": "^6.0.3"
   },
   "overrides": {
